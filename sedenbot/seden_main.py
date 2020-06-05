@@ -33,7 +33,7 @@ INVALID_PH = '\nHATA: Girilen telefon numarası geçersiz' \
 async def load_brain():
     if path.exists("learning-data-root.check"):
         remove("learning-data-root.check")
-    URL = 'https://raw.githubusercontent.com/NaytSeyd/databasescape/master/learning-data-root.check'
+    URL = 'https://raw.githubusercontent.com/Kn0ax/databasescape/master/learning-data-root.check'
     with open('learning-data-root.check', 'wb') as load:
         load.write(get(URL).content)
     DB = connect("learning-data-root.check")
